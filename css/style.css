@@ -5,7 +5,7 @@
   --primary-white-color: #ffffff;
   --secondary-background-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
-  --button-color: #f5f4fa;
+  --secondary-accent-color: #f5f4fa;
 }
 
 .list {
@@ -15,11 +15,19 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* logo */
 .logo {
   color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .logo span {
   color: var(--accent-color);
@@ -27,6 +35,11 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -40,6 +53,10 @@ body {
 
 .contacts .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -51,18 +68,41 @@ body {
 }
 .hero-title {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .features .title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section.team {
+  background-color: var(--secondary-accent-color);
 }
 
 .workers .title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
 }
 
 .filter .button:hover,
@@ -75,13 +115,18 @@ body {
   color: var(--title-text-color);
 }
 
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 .button.secondary {
   color: var(--title-text-color);
-  background-color: var(--button-color);
+  background-color: var(--secondary-accent-color);
 }
 .footer {
   background-color: var(--secondary-background-color);
