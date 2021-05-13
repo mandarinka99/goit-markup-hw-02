@@ -22,47 +22,40 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* logo */
+/* header */
+
 .logo {
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
-.logo span {
+.logo > span {
   color: var(--accent-color);
 }
 
-.site-nav .link {
+.nav-link,
+.contacts-link {
   color: var(--title-text-color);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link.current {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
-.contacts .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-}
-
+/* hero */
 .hero {
   background-color: var(--secondary-background-color);
 }
@@ -76,6 +69,7 @@ body {
   text-transform: uppercase;
 }
 
+/* section */
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -84,57 +78,90 @@ body {
   text-align: center;
 }
 
-.features .title {
+/* features */
+.features-title {
   color: var(--title-text-color);
-
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.section.team {
+/* team */
+.section-team {
   background-color: var(--secondary-accent-color);
 }
 
-.workers .title {
+.workers-title {
   color: var(--title-text-color);
   font-weight: 500;
+}
+
+.workers-title,
+.workers-position {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
 }
 
+/* portfolio */
+.examples-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-desc {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* button */
+.button {
+  color: var(--title-text-color);
+  cursor: pointer;
+  background-color: var(--secondary-accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.hero .button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.button.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 .filter .button:hover,
 .filter .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.examples .title {
-  color: var(--title-text-color);
-}
-
-.button {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
-}
-
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-.button.secondary {
-  color: var(--title-text-color);
-  background-color: var(--secondary-accent-color);
-}
+/* footer */
 .footer {
   background-color: var(--secondary-background-color);
   color: var(--primary-white-color);
 }
+
 .footer .logo {
   color: var(--primary-white-color);
 }
-.footer .contacts .link {
+
+.footer-link {
   color: var(--footer-text-color);
+  text-decoration: none;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
