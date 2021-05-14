@@ -34,16 +34,21 @@ body {
 .logo > span {
   color: var(--accent-color);
 }
+.nav-link {
+  color: var(--title-text-color);
+}
+.contacts-link {
+  color: var(--primary-text-color);
+}
 
 .nav-link,
 .contacts-link {
-  color: var(--title-text-color);
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .nav-link.current {
   color: var(--accent-color);
 }
@@ -137,10 +142,7 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
 }
-.button.current {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
+
 .filter .button:hover,
 .filter .button:focus {
   color: var(--primary-white-color);
@@ -155,6 +157,10 @@ body {
 
 .footer .logo {
   color: var(--primary-white-color);
+}
+
+address {
+  font-style: normal;
 }
 
 .footer-link {
